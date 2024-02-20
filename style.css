@@ -23,7 +23,8 @@ body {
   max-width: 90rem;
   width: 100%;
   color: var(--WengeBrown);
-  display: grid;
+  display: grid;  
+  font-size: .875rem;
   background-color: var(--Eggshell);
 }
 
@@ -43,19 +44,25 @@ body {
 .recipe__title {
   font-family: var(--ff-secondary);
   color: var(--DarkCharcoal);
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+.ingredients__title, .instructiona__title {
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .main_recipe--prep {
   display: grid;
   gap: 1em;
   background-color: var(--RoseWhite);
-  padding: 2em;
+  padding: 1em;
 }
 
 .recipe-prep__title {
   color: var(--DarkRaspberry);
 font-family: var(--ff-primary);
+font-size: 1.125rem;
 }
 
 .recipe-prep__list, 
@@ -78,6 +85,7 @@ font-family: var(--ff-primary);
 
 li {
   padding-left: .9375rem;
+
 }
 
 /* Sections h2 headings */
