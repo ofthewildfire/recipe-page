@@ -14,6 +14,20 @@
 --DarkCharcoal: hsl(24, 5%, 18%);
 
 
+
+
+/* Dark mode colours */
+
+--invertedNutmeg: hsl(194, 45%, 36%);
+--invertedDarkRaspberry: hsl(152, 49%, 68%);
+--invertedWhite: hsl(0, 0%, 0%);
+--invertedRoseWhite: hsla(0, 5%, 15.7%, 0.65);
+--invertedEggshell: hsl(210, 46%, 10%);
+--invertedLightGrey: hsl(210, 82%, 13%);
+--invertedWengeBrown: hsl(210, 90%, 66%);
+--invertedDarkCharcoal: hsl(204, 95%, 82%);
+
+
 /* Default padding/margin */
 
 }
@@ -24,7 +38,7 @@ body {
   width: 100%;
   color: var(--WengeBrown);
   display: grid;  
-  font-size: .875rem;
+ font-size: 1rem;
   background-color: var(--Eggshell);
 }
 
@@ -47,7 +61,8 @@ body {
   font-size: 2rem;
 }
 
-.ingredients__title, .instructiona__title {
+.ingredients__title, .instructiona__title, 
+.nutrition__title {
   font-weight: 800;
   font-size: 1.5rem;
 }
@@ -174,4 +189,53 @@ tr:nth-of-type(4) {
     border-radius: 15px;
   }
 
+}
+
+
+/* Dark mode colors */
+
+.dark-bg {
+  background-color: var(--invertedEggshell);
+  transition: all .2s linear;
+}
+
+.dark-card {
+  background: var(--invertedWhite);
+  color: var(--RoseWhite);
+  transition: all .2s linear;
+}
+
+.dark-titles {
+  color: var(--invertedNutmeg);
+}
+
+.dark-prep{
+  background-color: var(--invertedRoseWhite);
+  color: var(--RoseWhite);
+}
+
+.dark-prep .recipe-prep__list > .list-item {
+  color: var(--White);
+  font-weight: 800;
+}
+
+.dark-card .main-recipe__nutrition > table > tbody > tr > td:nth-of-type(2) {
+  color: var(--invertedNutmeg);
+}
+
+.dark-recipe-title {
+  color: var(--invertedDarkCharcoal) ;
+}
+
+.dark-li-marker::marker {
+  color: var(--invertedDarkRaspberry);
+}
+
+.dark-prep-title {
+  color: var(--invertedDarkRaspberry);
+}
+
+.toggle {
+  text-align: right;
+  position: fixed;
 }
