@@ -239,3 +239,27 @@ tr:nth-of-type(4) {
   text-align: right;
   position: fixed;
 }
+
+
+
+.light-mode, .dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  padding: 0.5em;
+  max-width: 2rem;
+  max-height: 2rem;
+  width: 100%;
+
+}
+
+button:is(:focus, :active, :hover) {
+  border: 2px dashed grey;
+  cursor: pointer;
+}
+
+
+.hidden {
+  display: none;
+}

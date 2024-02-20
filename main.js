@@ -19,6 +19,9 @@ const prepTitle = document.querySelector('.recipe-prep__title')
 
 const toggle = document.querySelector(".toggle");
 
+const sunButton = document.querySelector('.dark-mode')
+const moonButton = document.querySelector('.light-mode')
+
 toggle.addEventListener("click", toggleColor);
 
 const darkBg =  "dark-bg"
@@ -28,8 +31,17 @@ const darkPrep = "dark-prep"
 const darkRecipleTitle = "dark-recipe-title"
 const darkLiMarker = 'dark-li-marker'
 const darkPrepTitle = "dark-prep-title"
+const hideClass = "hidden"
+
+
 
 function toggleColor() {
+
+sunButton.classList.toggle(hideClass)
+moonButton.classList.toggle(hideClass)
+
+
+
 h1.classList.toggle(darkRecipleTitle)
 prep.classList.toggle(darkPrep)
 body.classList.toggle(darkBg)
